@@ -1,14 +1,26 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function AuthHeader() {
-	const { theme, setTheme } = useTheme();
+	const { theme, resolvedTheme, setTheme } = useTheme();
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	const logoSrc = mounted
+		? resolvedTheme === "dark"
+			? "/logo-dark.svg"
+			: "/logo-light.svg"
+		: "/logo-light.svg";
 
 	return (
 		<header className="flex items-center justify-between px-6 py-4">
 			<a href="/" className="flex items-center">
-				<img src="/favicon.svg" alt="Logo" className="h-8 w-8" />
+				<img src={logoSrc} alt="Logo" className="h-8 w-8" />
 			</a>
 			<button
 				type="button"

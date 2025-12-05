@@ -52,3 +52,4 @@ yarn-error.log*
 
 # Supabase local config
 supabase/
+.env*.local
