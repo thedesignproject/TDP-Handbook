@@ -4,6 +4,7 @@ import Link from "next/link";
 import type React from "react";
 import { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { BiLogOut } from "react-icons/bi";
 import { Search } from "../../search-docs/search";
 import LightDarkSwitch from "../../ui/light-dark-switch";
 import { NavbarLogo } from "./navbar-logo";
@@ -112,6 +113,13 @@ export const TopNav = ({
                             {ctaButtons.button2.label}
                           </Link>
                         )}
+                      <Link
+                        href="/auth/signout"
+                        className="block px-4 py-2 text-sm text-neutral-text hover:bg-neutral-background-secondary border-t border-neutral-border-subtle"
+                        onClick={() => setIsDropdownOpen(false)}
+                      >
+                        Sign out
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -119,8 +127,15 @@ export const TopNav = ({
             </>
           )}
           <MobileNavSidebar tocData={tabs} />
-          <div className="w-full hidden lg:flex justify-end">
+          <div className="w-full hidden lg:flex justify-end items-center gap-2">
             <LightDarkSwitch />
+            <Link
+              href="/auth/signout"
+              className="p-2 rounded-md hover:bg-neutral-background-secondary transition-colors"
+              title="Sign out"
+            >
+              <BiLogOut className="size-5 text-neutral-text-secondary hover:text-neutral-text" />
+            </Link>
           </div>
         </div>
       </div>
