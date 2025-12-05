@@ -2,9 +2,9 @@
 
 import { createClient } from "@/utils/supabase/client";
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 
-export default function LoginPage() {
+function LoginContent() {
 	const searchParams = useSearchParams();
 	const [email, setEmail] = useState("");
 	const [loading, setLoading] = useState(false);
@@ -124,5 +124,24 @@ export default function LoginPage() {
 					</button>
 			</form>
 		</div>
+	);
+}
+
+export default function LoginPage() {
+	return (
+		<Suspense fallback={
+			<div className="w-full max-w-md space-y-8 rounded-lg border border-neutral-200 bg-white p-8 shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
+				<div className="text-center">
+					<h1 className="text-2xl font-bold text-neutral-900 dark:text-white">
+						Sign in to TDP SOPs
+					</h1>
+					<p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+						Loading...
+					</p>
+				</div>
+			</div>
+		}>
+			<LoginContent />
+		</Suspense>
 	);
 }
