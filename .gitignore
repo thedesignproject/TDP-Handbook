@@ -46,3 +46,9 @@ yarn-error.log*
 /public/sitemap-0.xml
 /playwright-report
 /test-results
+
+# Playwright MCP screenshots
+.playwright-mcp/
+
+# Supabase local config
+supabase/
