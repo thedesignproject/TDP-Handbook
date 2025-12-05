@@ -1,6 +1,6 @@
 {
-  "lightModeLogo": "/svg/tina-icon-orange.svg",
-  "darkModeLogo": "/svg/tina-icon-orange.svg",
+  "lightModeLogo": "/logo-light.svg",
+  "darkModeLogo": "/logo-dark.svg",
   "tabs": [
     {
       "title": "Docs",
