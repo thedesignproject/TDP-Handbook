@@ -33,25 +33,38 @@ export async function updateSession(request: NextRequest) {
 		data: { user },
 	} = await supabase.auth.getUser();
 
-	// Allow access to login page and auth callback
+	// Allow access to login page, auth callback, and signout
 	const isLoginPage = request.nextUrl.pathname === "/login";
 	const isAuthCallback = request.nextUrl.pathname === "/auth/callback";
+	const isAuthSignout = request.nextUrl.pathname === "/auth/signout";
 	const isAdminRoute = request.nextUrl.pathname.startsWith("/admin");
+	const isRootPath = request.nextUrl.pathname === "/";
 
 	// Skip auth for TinaCMS admin routes (has its own auth)
 	if (isAdminRoute) {
 		return supabaseResponse;
 	}
 
-	// Allow unauthenticated access to login and callback
-	if (isLoginPage || isAuthCallback) {
-		// If user is already logged in and on login page, redirect to home
+	// Allow unauthenticated access to login, callback, and signout
+	if (isLoginPage || isAuthCallback || isAuthSignout) {
+		// If user is already logged in and on login page, redirect to docs
 		if (user && isLoginPage) {
 			const url = request.nextUrl.clone();
-			url.pathname = "/";
+			url.pathname = "/docs";
 			return NextResponse.redirect(url);
 		}
 		return supabaseResponse;
+	}
+
+	// Handle root path - redirect based on auth status
+	if (isRootPath) {
+		const url = request.nextUrl.clone();
+		if (user) {
+			url.pathname = "/docs";
+		} else {
+			url.pathname = "/login";
+		}
+		return NextResponse.redirect(url);
 	}
 
 	// Protect all other routes - redirect to login if not authenticated
