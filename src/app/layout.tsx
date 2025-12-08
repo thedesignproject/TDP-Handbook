@@ -24,7 +24,7 @@ export default function RootLayout({
 			<head>
 				<meta name="theme-color" content="#E6FAF8" />
 				<link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+				<link rel="icon" type="image/png" href="/favicon.png" />
 			</head>
 			<body className={`${body.variable} ${heading.variable}`}>
 				<ThemeProvider
