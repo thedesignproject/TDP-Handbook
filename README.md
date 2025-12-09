@@ -1,41 +1,65 @@
-# web-docs_teddyp_app
+# TDP Documentation
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+Internal documentation site for The Design Project team.
 
-Run development server:
+## Running Locally
 
 ```bash
+bun install
 bun run dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Open http://localhost:3000 with your browser.
 
-## Explore
+## Documentation Structure
 
-In the project, you can see:
+### Organization (`/docs/organization`)
+Company-level structure and processes:
+- **Overview** — Org chart and core principles
+- **Leadership Roles** — Alex (Director), Dianne (Commercial), Mica (Customer Success & Ops)
+- **Design Team Structure** — Team Leads (Luli & Delfi) and Junior Designers
+- **Key Processes** — Escalation flows, design reviews, quality checks, sales handoff
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `lib/layout.shared.tsx`: Shared options for layouts, optional but preferred to keep.
+### Lead & Associate SOP (`/docs/sop`)
+Standard operating procedures for the Lead/Associate designer model:
+- **Process Workflow** — Steps 0-6 from kickoff to delivery
+- **Roles** — Lead and Associate responsibilities
+- **Tools & Templates** — Required tools, Asana setup, standard templates
+- **Growth Framework** — Associate skill progression (Month 1-12)
+- **Management** — Risk escalation, success metrics, continuous improvement
+- **Resources** — Q&A, prompt library, troubleshooting
 
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
+## Content Location
 
-### Fumadocs MDX
+All documentation content lives in `content/docs/`:
 
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
+```
+content/docs/
+├── index.mdx                    # Landing page
+├── organization/                # Company structure
+│   ├── index.mdx
+│   ├── leadership.mdx
+│   ├── design-team.mdx
+│   └── processes.mdx
+└── sop/                         # Lead & Associate SOP
+    ├── index.mdx
+    ├── tools-templates.mdx
+    ├── growth-framework.mdx
+    ├── process/
+    ├── roles/
+    ├── management/
+    └── resources/
+```
 
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
+## Adding Content
 
-## Learn More
+1. Create `.mdx` files in the appropriate folder
+2. Add frontmatter with `title` and `description`
+3. Update `meta.json` in the folder to control navigation order
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.dev) - learn about Fumadocs
+- [Next.js](https://nextjs.org/) — Framework
+- [Fumadocs](https://fumadocs.dev) — Documentation framework
+- [Supabase](https://supabase.com) — Authentication
+- [Tailwind CSS](https://tailwindcss.com) — Styling

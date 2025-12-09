@@ -20,3 +20,11 @@ Use `<username>/<type>-<short-description>` format.
 **Example:** `aalter/fix-login-redirect`
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for full details.
+
+## Documentation
+
+When adding, removing, or reorganizing documentation in `content/docs/`, always update `README.md` to reflect the current structure. The README should accurately describe:
+
+- Documentation sections and their purpose
+- Folder structure
+- Any new content areas added

@@ -1,0 +1,140 @@
+---
+title: Prompt Library
+description: Standardized AI prompts for consistent design work across the team
+---
+
+To ensure all designers use AI tools (Claude, ChatGPT) in a consistent, effective, and aligned way across all customers and projects, we maintain a centralized Prompt Library.
+
+## Purpose
+
+- Ensure AI agents behave consistently across all designers
+- Prevent loss of strong prompts and best practices
+- Provide a shared repository of high-quality prompts for daily workflows
+- Support faster, aligned execution for both Leads and Associates
+- Maintain quality and consistency across all customer work
+
+---
+
+## 1. Baseline Instructions for AI Agents
+
+Every designer must use the following standardized baseline prompt as the persistent instruction for Claude / ChatGPT:
+
+```
+You are a senior product designer specializing in UX/UI for web and mobile products.
+
+**Role & Goals**
+Think and act like a hands-on, senior product designer.
+Produce clear, opinionated, high-quality design directions that I can implement (flows, layouts, components, copy suggestions).
+
+**Design Approach**
+• Apply UX best practices and modern UI standards (accessibility, hierarchy, spacing, tap targets, readability, error/empty states).
+• Prefer well-known patterns users already understand.
+• When helpful, reference familiar products (e.g., Calendly, Notion) and explain why the pattern applies.
+• Recommend 1–3 strong options; clearly state which option you would choose and why. Use https://www.ideo.com/ and https://www.nngroup.com/ as guides when needed.
+
+**Critique & Tone**
+• Maintain a sharp, critical UX eye; call out friction clearly.
+• Be direct, constructive, and respectful, not overly nice.
+• If something is ambiguous or weak, propose a stronger alternative.
+
+**Output Format for Designs**
+• Display all screens/states in a single vertical artifact.
+• Use headings such as: Screen 1 – Home, Screen 2 – Detail, State – Empty, State – Error.
+• For each screen or change, include a short "What changed & why" section with UX rationale.
+
+**How to Think**
+• Think in flows, not isolated screens.
+• Assume real-world constraints (limited dev time, responsive behavior, edge cases).
+• When given an existing design, first critique it, then propose concrete improvements.
+• Only ask clarifying questions when absolutely necessary; otherwise make smart assumptions.
+```
+
+---
+
+## 2. Project Context Creation (Required Per Customer)
+
+For every new customer, designers must generate a structured **Project Context** to ensure the AI understands the product, goals, and user base.
+
+### Required Steps
+
+1. Visit the customer's website and primary product surfaces
+2. Share the materials with ChatGPT to generate a structured snapshot
+3. Summarize into a Project Context that includes:
+   - Product overview
+   - Target users and use cases
+   - Business goals and constraints
+   - Core features
+   - Tone/brand considerations
+   - Competitive patterns
+4. Upload the final context to the customer's Asana project under **Documentation**
+5. Update the context whenever customer direction or product scope changes
+
+---
+
+## 3. Prompt Library Structure
+
+The Prompt Library includes high-value prompts for:
+
+### Design + UX
+- UX critique and evaluation
+- Flow generation
+- Wireframe and layout assistance
+- UI patterns and alternatives
+
+### Research + Understanding
+- Customer context generation
+- Benchmarking and pattern exploration
+
+### Figma + File Structure
+- File organization prompts
+- Component documentation
+- Naming conventions and grouping patterns
+
+### Customer Communication
+- Presentation scripts
+- Loom explanation structures
+- "What changed & why" summaries
+
+### Dev Handoff
+- Annotation prompts
+- Specification prompts
+- Interaction documentation
+
+---
+
+## 4. Library Location
+
+All approved prompts live in:
+
+**Asana → TDP Lead/Associate Resources → Prompt Library**
+
+<Callout type="warn">
+This is the single source of truth and must always be used before creating new prompts.
+</Callout>
+
+---
+
+## 5. Ownership & Maintenance
+
+### DesignOps (Alex) owns:
+- Maintaining and updating the Prompt Library weekly
+- Approving and reviewing new prompt submissions
+- Removing duplicates, outdated content, and low-quality prompts
+- Ensuring prompt usage is consistent across the team
+
+### Leads and Associates must:
+- Use only the approved prompts unless directed otherwise
+- Submit new prompts to DesignOps when they find something effective
+- Avoid keeping private prompt collections outside the library
+
+---
+
+## 6. Usage Expectations
+
+All designers must:
+
+- Start with the Baseline Instructions prompt for all AI design work
+- Use the Prompt Library before generating new prompts
+- Update Asana with any new approved prompts
+- Ensure AI-assisted work meets TDP quality standards
+- Keep prompts consistent across all customers, especially long-term engagements
