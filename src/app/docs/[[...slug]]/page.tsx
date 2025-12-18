@@ -22,10 +22,10 @@ export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
   if (!page) notFound();
 
   const MDX = page.data.body;
-  // Handle index pages (empty slugs) vs regular pages
-  const slugPath = page.slugs.length > 0 ? page.slugs.join('/') : 'index';
-  const rawGithubUrl = `https://raw.githubusercontent.com/${owner}/${repo}/refs/heads/${branch}/content/docs/${slugPath}.mdx`;
-  const githubUrl = `https://github.com/${owner}/${repo}/blob/${branch}/content/docs/${slugPath}.mdx`;
+  // Use page.path for the actual file path (handles folder/index.mdx correctly)
+  const filePath = page.path;
+  const rawGithubUrl = `https://raw.githubusercontent.com/${owner}/${repo}/refs/heads/${branch}/content/docs/${filePath}`;
+  const githubUrl = `https://github.com/${owner}/${repo}/blob/${branch}/content/docs/${filePath}`;
 
   return (
     <DocsPage toc={page.data.toc} full={page.data.full}>
