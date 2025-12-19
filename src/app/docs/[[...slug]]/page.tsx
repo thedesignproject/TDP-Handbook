@@ -12,8 +12,8 @@ import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { LLMCopyButton, ViewOptions } from '@/components/page-actions';
 
 // GitHub repository info
-const owner = 'alsoalter85';
-const repo = 'TDP-SOPs';
+const owner = 'thedesignproject';
+const repo = 'TDP-Handbook';
 const branch = 'main';
 
 export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
@@ -22,18 +22,18 @@ export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
   if (!page) notFound();
 
   const MDX = page.data.body;
-  // Handle index pages (empty slugs) vs regular pages
-  const slugPath = page.slugs.length > 0 ? page.slugs.join('/') : 'index';
-  const markdownUrl = `/api/docs/${slugPath}.mdx`;
-  const githubUrl = `https://github.com/${owner}/${repo}/blob/${branch}/content/docs/${slugPath}.mdx`;
+  // Use page.path for the actual file path (handles folder/index.mdx correctly)
+  const filePath = page.path;
+  const rawGithubUrl = `https://raw.githubusercontent.com/${owner}/${repo}/refs/heads/${branch}/content/docs/${filePath}`;
+  const githubUrl = `https://github.com/${owner}/${repo}/blob/${branch}/content/docs/${filePath}`;
 
   return (
     <DocsPage toc={page.data.toc} full={page.data.full}>
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
       <div className="flex flex-row flex-wrap gap-2 items-center border-b pb-4 mb-4">
-        <LLMCopyButton markdownUrl={markdownUrl} />
-        <ViewOptions markdownUrl={markdownUrl} githubUrl={githubUrl} />
+        <LLMCopyButton markdownUrl={rawGithubUrl} />
+        <ViewOptions markdownUrl={rawGithubUrl} githubUrl={githubUrl} />
       </div>
       <DocsBody>
         <MDX
