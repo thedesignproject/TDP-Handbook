@@ -26,7 +26,7 @@ Standard operating procedures for the Lead/Associate designer model:
 - **Roles** — Lead and Associate responsibilities
 - **Tools & Templates** — Required tools, Asana setup, standard templates
 - **Growth Framework** — Associate skill progression (Month 1-12)
-- **Management** — Risk escalation, success metrics, continuous improvement
+- **Management** — Risk escalation, success metrics, OOO coverage, continuous improvement
 - **Resources** — Q&A, prompt library, troubleshooting
 
 ## Content Location
