@@ -3,6 +3,7 @@
   "pages": [
     "daily-status",
     "daily-status-lead",
-    "daily-status-associate"
+    "daily-status-associate",
+    "customer-communication"
   ]
 }

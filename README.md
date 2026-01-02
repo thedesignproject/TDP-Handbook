@@ -24,7 +24,7 @@ Company-level structure and processes:
 Standard operating procedures for the Lead/Associate designer model:
 - **Process Workflow** — Steps 0-6 from kickoff to delivery
 - **Roles** — Lead and Associate responsibilities
-- **Playbooks** — Operational workflows (Daily Status communication)
+- **Playbooks** — Operational workflows (Daily Status, Customer Communication Standards)
 - **Tools & Templates** — Required tools, Asana setup, standard templates
 - **Growth Framework** — Associate skill progression (Month 1-12)
 - **Management** — Risk escalation, success metrics, continuous improvement
