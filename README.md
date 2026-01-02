@@ -22,7 +22,7 @@ Company-level structure and processes:
 
 ### Lead & Associate SOP (`/docs/sop`)
 Standard operating procedures for the Lead/Associate designer model:
-- **Process Workflow** — Steps 0-6 from kickoff to delivery
+- **Process Workflow** — Steps 0-6 from kickoff to delivery, including meeting cadence and communication standards
 - **Roles** — Lead and Associate responsibilities
 - **Playbooks** — Operational workflows (Daily Status communication)
 - **Tools & Templates** — Required tools, Asana setup, standard templates
