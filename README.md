@@ -18,7 +18,7 @@ Company-level structure and processes:
 - **Overview** — Org chart and core principles
 - **Leadership Roles** — Alex (Director), Dianne (Commercial), Mica (Customer Success & Ops)
 - **Design Team Structure** — Team Leads (Luli & Delfi) and Junior Designers
-- **Key Processes** — Escalation flows, design reviews, quality checks, sales handoff
+- **Key Processes** — Escalation flows, design reviews, quality checks, sales handoff, designer transfer
 
 ### Lead & Associate SOP (`/docs/sop`)
 Standard operating procedures for the Lead/Associate designer model:
