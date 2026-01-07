@@ -1,0 +1,104 @@
+---
+title: LLM Council
+description: Design team framework for deep research using multiple AI models
+---
+
+Deep research only — not every task.
+
+## When to Use
+
+**Triggers:**
+- User research synthesis
+- Design critiques (stuck or high-stakes)
+- UX copy for complex flows
+- Competitive/pattern analysis
+
+---
+
+## The Process
+
+```
+1. CRAFT PROMPT
+   Start with role + context + specific ask
+                    ↓
+2. QUERY 5 LLMs (same prompt)
+   ChatGPT → Gemini → Claude → Perplexity → Grok
+                    ↓
+3. COLLECT RESPONSES
+   Copy each into a single doc, labeled by source
+                    ↓
+4. SYNTHESIZE IN CLAUDE
+   Paste all 5 + synthesis prompt
+```
+
+---
+
+## Steps
+
+### Step 1: Create a Prompt
+
+Use this template to craft your initial query:
+
+```
+You are a senior product designer with 10+ years of experience in B2B SaaS.
+
+[CONTEXT]
+I'm working on: _______
+The user/audience is: _______
+The problem I'm solving: _______
+
+[ASK]
+[Specific question or task]
+
+Be specific, cite reasoning, and flag any assumptions.
+```
+
+---
+
+### Step 2: Feed the Prompt into All 5 LLMs
+
+Send the same prompt to each of these models:
+
+1. **ChatGPT**
+2. **Gemini**
+3. **Claude**
+4. **Grok**
+5. **Perplexity**
+
+Collect each response and label it by source.
+
+---
+
+### Step 3: Synthesize with Claude
+
+Take all 5 responses and paste them into Claude with this synthesis prompt:
+
+```
+You are a senior product designer synthesizing research from multiple AI sources.
+
+Below are 5 responses to the same design question. Analyze them and provide:
+
+1. **Consensus** — Where do 3+ sources agree?
+2. **Conflicts** — Where do they disagree? Who's likely right and why?
+3. **Blind spots** — What did most miss that one caught?
+4. **Recommendation** — Your synthesized answer based on the strongest reasoning
+```
+
+---
+
+## Notes
+
+- **Claude is double-weighted** in this workflow (council member + synthesizer). Accepted tradeoff.
+- **Perplexity** will include source citations — useful for research-heavy queries.
+- **Grok** may give edgier/contrarian takes — good for blind spot detection.
+
+---
+
+## Example Use Cases
+
+| Task | Initial Prompt Starter |
+|------|------------------------|
+| User research | "You are a senior product designer conducting user analysis..." |
+| UX copy | "You are a senior product designer writing microcopy..." |
+| Design critique | "You are a senior product designer reviewing this flow..." |
+| Competitive analysis | "You are a senior product designer analyzing competitor patterns..." |

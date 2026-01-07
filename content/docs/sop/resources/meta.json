@@ -3,6 +3,7 @@
   "pages": [
     "qa",
     "prompts",
-    "troubleshooting"
+    "troubleshooting",
+    "llm-council"
   ]
 }
