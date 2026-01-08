@@ -3,7 +3,8 @@
   "pages": [
     "qa",
     "prompts",
-    "troubleshooting",
-    "llm-council"
+    "creating-sop-prs",
+    "llm-council",
+    "troubleshooting"
   ]
 }

@@ -1,0 +1,275 @@
+---
+title: Creating SOP Pull Requests with Claude Code
+description: Complete step-by-step guide for using Claude Code to create and submit SOP updates
+---
+
+This guide walks you through the complete process of creating SOP pull requests using Claude Code, from connecting your repository to sharing your PR for review.
+
+---
+
+## Prerequisites: Connecting the TDP-Handbook Repository
+
+Before you can create PRs, you need to connect the TDP-Handbook repository to Claude Code.
+
+### Step 1: Access Claude Code
+
+1. Open Claude (claude.ai)
+2. Navigate to the project/repository section
+3. You should see a list of repositories or an option to add one
+
+### Step 2: Connect the Repository
+
+If you don't see TDP-Handbook listed:
+
+1. Ask Claude Code directly: "How do I connect the TDP-Handbook repository to Claude Code?"
+2. Claude will provide specific instructions for your setup
+3. Follow the authentication steps provided
+4. Once connected, you'll see "TDP-Handbook" appear in your repository list
+
+---
+
+## Method 1: Creating PRs with Images (Recommended for Visual Content)
+
+Use this method when you have screenshots, photos, or visual content to add to the SOP.
+
+### Step 1: Prepare Your Content
+
+1. Take clear screenshots or photos of the content you want to add
+2. Make sure text is readable and images are high quality
+3. Organize images in the order you want them presented
+
+### Step 2: Upload to Claude Code
+
+1. In your Claude Code conversation, click the attachment/upload button
+2. Select all your images
+3. Upload them to the conversation
+
+### Step 3: Give Claude Clear Instructions
+
+Type this prompt (customize as needed):
+
+```
+Help me create a new PR using the images attached.
+
+Make sure that no data/info are being duplicated on the current SOP.
+
+Let me know where will you put these.
+
+And before creating PR, consult with me first.
+```
+
+### Step 4: Review Claude's Analysis
+
+Claude will:
+- Analyze the content in your images
+- Check for duplicate information in the existing SOP
+- Suggest where to place the content
+- Ask you clarifying questions
+
+**Example questions Claude might ask:**
+- "Is the content accurate to what you wanted?"
+- "Should I change 'Review with Lead' to 'Review with [specific name]' or keep it generic?"
+- "Any additions or changes needed?"
+- "Should I also update the Resources index page and meta.json to include this new page?"
+
+### Step 5: Answer Claude's Questions
+
+Respond to each question clearly:
+- Answer yes/no questions directly
+- Provide specific preferences when asked
+- Confirm or adjust Claude's suggestions
+
+### Step 6: Let Claude Create the PR
+
+Once you've answered all questions, Claude will:
+- Create the necessary files
+- Update navigation files (meta.json, index.mdx)
+- Commit the changes
+- Push to a new branch
+- Provide you with the PR link
+
+---
+
+## Method 2: Creating PRs with Text (Recommended for Text Content)
+
+Use this method when you have text content, documentation, or written instructions to add.
+
+### Step 1: Prepare Your Content
+
+1. Copy the text content you want to add
+2. Format it clearly with headings, bullet points, or sections
+3. Note where you think it should go (if you have a preference)
+
+### Step 2: Paste into Claude Code
+
+Paste your content directly into the Claude Code conversation.
+
+### Step 3: Give Claude Clear Instructions
+
+Type this prompt:
+
+```
+Help me create a new PR with this content:
+
+[Paste your content here]
+
+Make sure that no data/info are being duplicated on the current SOP.
+
+Let me know where will you put this.
+
+And before creating PR, consult with me first.
+```
+
+### Step 4: Follow the Review Process
+
+Same as Method 1, Steps 4-6:
+- Review Claude's analysis
+- Answer questions
+- Confirm placement
+- Let Claude create the PR
+
+---
+
+## Reviewing Your PR Before Sharing
+
+After Claude creates the PR, you **must** review it before sharing with the team.
+
+### Step 1: Open the PR Link
+
+Claude will provide a GitHub link like:
+```
+https://github.com/thedesignproject/TDP-Handbook/pull/new/claude/[branch-name]
+```
+
+Click this link to open the PR in GitHub.
+
+### Step 2: Review the Files Changed
+
+1. In the PR, click the **"Files changed"** tab
+2. You'll see all files that were added or modified
+3. Review each section carefully:
+   - Check that formatting is correct
+   - Verify all information is accurate
+   - Ensure headings and structure make sense
+   - Look for any errors or typos
+
+**Take your time with this step.** This is your chance to catch any issues before others see it.
+
+### Step 3: Preview the Live Documentation
+
+To see how your changes will look in the actual documentation site:
+
+1. Scroll down in the PR to the checks section
+2. Find the **Vercel preview deployment** (usually has a green checkmark)
+3. Click **"Preview"** or **"Open link in new tab"**
+4. This opens a preview of the documentation site with your changes
+5. Navigate to your new/updated page
+6. Check that everything renders correctly:
+   - Images display properly
+   - Links work
+   - Tables format correctly
+   - Code blocks appear as expected
+   - Navigation includes your new page
+
+**This preview is only visible to you** - it's not live yet. This is your sandbox to verify everything looks good.
+
+### Step 4: Make Any Necessary Edits
+
+If you spot issues during review:
+
+1. Go back to Claude Code
+2. Ask Claude to make specific changes: "Can you update [specific section] to say [new content]?"
+3. Claude will update the PR
+4. Review again using Steps 2-3
+
+---
+
+## Sharing Your PR for Review
+
+Once you're satisfied with your PR, share it with the team for review.
+
+### Step 1: Copy the PR Link
+
+1. In your GitHub PR, click the **three dots** (⋯) in the top right
+2. Select **"Copy link"**
+3. The PR URL is now on your clipboard
+
+### Step 2: Post in Slack
+
+1. Go to Slack
+2. Navigate to the **#team-operations-pr-reviews** channel
+3. Post a message with your PR link:
+
+**Template message:**
+```
+New PR: [Brief title of what you added/changed]
+
+[Paste PR link]
+
+Feel free to review and approve!
+```
+
+**Example:**
+```
+New PR: Add Claude Daily Workflow guide to Resources
+
+https://github.com/thedesignproject/TDP-Handbook/pull/123
+
+Feel free to review and approve!
+```
+
+---
+
+## What Happens After You Share
+
+1. **Team reviews your PR** in the #team-operations-pr-reviews channel
+2. **Reviewers may add comments** or request changes
+3. **You respond to feedback** by either:
+   - Making requested changes (ask Claude Code to update)
+   - Explaining your reasoning
+   - Discussing alternatives
+4. **Once approved**, your PR will be merged
+5. **Your changes go live** on the documentation site
+
+---
+
+## Tips for Success
+
+### DO:
+- ✅ Always ask Claude to check for duplicates
+- ✅ Review the preview before sharing
+- ✅ Answer Claude's questions clearly
+- ✅ Test all links in your preview
+- ✅ Share in #team-operations-pr-reviews when ready
+
+### DON'T:
+- ❌ Skip the preview step
+- ❌ Share PRs without reviewing them first
+- ❌ Forget to update navigation files (Claude handles this, but verify)
+- ❌ Assume Claude knows your preference (answer all questions)
+
+---
+
+## Common Questions
+
+**Q: What if I'm not sure where content should go?**
+A: Ask Claude! Say "I have this content but I'm not sure where it fits. Can you suggest the best location?"
+
+**Q: Can I create multiple PRs at once?**
+A: Yes, but review each one separately to ensure quality.
+
+**Q: What if my PR has conflicts?**
+A: Ask Claude: "My PR has conflicts. How do I resolve them?"
+
+**Q: How long does review take?**
+A: Usually 1-2 business days. Tag specific people in Slack if urgent.
+
+---
+
+## Need Help?
+
+If you get stuck:
+1. Ask Claude Code directly for help
+2. Post in #team-operations-pr-reviews
+
+Watch the video tutorial here: https://drive.google.com/file/d/1ykFXnCljYx2yDdRbNPJmpjA_MuGgAGGs/view?usp=sharing
