@@ -24,6 +24,7 @@ Company-level structure and processes:
 Customer Success processes for ensuring partnership success:
 - **Overview** — Customer Success responsibilities and when CS engages
 - **Expectations Meeting** — Initial meeting script for understanding business context, product goals, team structure, and setting partnership foundations
+- **Churn Indicators** — Early warning signs that a customer partnership may be at risk, organized by onboarding, engagement, value perception, and relationship quality
 
 ### Lead & Associate SOP (`/docs/sop`)
 Standard operating procedures for the Lead/Associate designer model:
@@ -49,7 +50,8 @@ content/docs/
 │   └── processes.mdx
 ├── customer-success/            # Customer Success processes
 │   ├── index.mdx
-│   └── expectations-meeting.mdx
+│   ├── expectations-meeting.mdx
+│   └── churn-indicators.mdx
 └── sop/                         # Lead & Associate SOP
     ├── index.mdx
     ├── tools-templates.mdx
