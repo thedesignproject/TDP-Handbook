@@ -20,6 +20,12 @@ Company-level structure and processes:
 - **Design Team Structure** — Team Leads (Luli & Delfi) and Junior Designers
 - **Key Processes** — Escalation flows, design reviews, quality checks, sales handoff
 
+### Customer Success (`/docs/customer-success`)
+Customer Success processes for ensuring partnership success:
+- **Overview** — Customer Success responsibilities and when CS engages
+- **Expectations Meeting** — Initial meeting script for understanding business context, product goals, team structure, and setting partnership foundations
+- **Churn Indicators** — Early warning signs that a customer partnership may be at risk, organized by onboarding, engagement, value perception, and relationship quality
+
 ### Lead & Associate SOP (`/docs/sop`)
 Standard operating procedures for the Lead/Associate designer model:
 - **Process Workflow** — Steps 0-6 from kickoff to delivery, including meeting cadence and communication standards
@@ -42,6 +48,10 @@ content/docs/
 │   ├── leadership.mdx
 │   ├── design-team.mdx
 │   └── processes.mdx
+├── customer-success/            # Customer Success processes
+│   ├── index.mdx
+│   ├── expectations-meeting.mdx
+│   └── churn-indicators.mdx
 └── sop/                         # Lead & Associate SOP
     ├── index.mdx
     ├── tools-templates.mdx
