@@ -25,7 +25,6 @@ Customer Success processes for ensuring partnership success:
 - **Overview** — Customer Success responsibilities and when CS engages
 - **Expectations Meeting** — Initial meeting script for understanding business context, product goals, team structure, and setting partnership foundations
 - **Asana Knowledge Hub** — 10-section template for documenting comprehensive customer context and creating design team handoff
-- **Churn Indicators** — Early warning signs that a customer partnership may be at risk, organized by onboarding, engagement, value perception, and relationship quality
 
 ### Lead & Associate SOP (`/docs/sop`)
 Standard operating procedures for the Lead/Associate designer model:
@@ -52,8 +51,7 @@ content/docs/
 ├── customer-success/            # Customer Success processes
 │   ├── index.mdx
 │   ├── expectations-meeting.mdx
-│   ├── asana-knowledge-hub.mdx
-│   └── churn-indicators.mdx
+│   └── asana-knowledge-hub.mdx
 └── sop/                         # Lead & Associate SOP
     ├── index.mdx
     ├── tools-templates.mdx
