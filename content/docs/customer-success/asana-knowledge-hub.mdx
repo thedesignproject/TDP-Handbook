@@ -1,0 +1,194 @@
+---
+title: Asana Knowledge Hub
+description: Creating comprehensive customer context documentation for design team handoff
+---
+
+**Owner:** Dianne (Customer Success Lead)
+**Timing:** After Expectations Meeting, before design team onboarding
+
+## Purpose
+
+The Asana Knowledge Hub is a comprehensive documentation process that consolidates all customer context into a structured format. This ensures the design team receives complete, organized information before beginning their work, eliminating information gaps and enabling them to start with full strategic context.
+
+## Input Sources
+
+The Knowledge Hub synthesizes information from multiple sources:
+
+- **Sales Meeting** notes and transcripts (Dianne's meeting)
+- **Expectations Meeting** notes and transcript
+- **Customer website** and public materials
+- **External research** (Crunchbase, funding announcements, press releases, etc.)
+- Any other relevant context gathered during the onboarding process
+
+<Callout type="warn">
+**Critical:** All information must come from these verified sources. Do not invent, assume, or extrapolate information not explicitly found in the materials.
+</Callout>
+
+---
+
+## Process Steps
+
+### 1. Gather All Materials
+
+Collect transcripts, notes, and research from:
+- Sales meeting with Dianne
+- Expectations Meeting
+- Customer website exploration
+- Crunchbase or similar research platforms
+
+### 2. Use Claude to Structure Information
+
+- Paste all gathered materials into Claude
+- Provide the 10-section template (below)
+- Ask Claude to fill in the template using **only** the information from provided materials
+
+### 3. Important Instructions for Claude
+
+When using Claude to create the Knowledge Hub, include these critical instructions:
+
+> "Fill in the following template using ONLY information from the materials provided. Do not invent, assume, or extrapolate any information. If a section cannot be filled with the available information, note 'Information not provided' rather than making assumptions. Reference specific sources when filling in each section."
+
+<Callout type="warn">
+**Watch for hallucinations:** Claude sometimes invents information to fill gaps. Always verify outputs against source materials. If something seems too specific or wasn't discussed, remove it.
+</Callout>
+
+### 4. Review and Verify
+
+- Cross-check all information against source materials
+- Remove any assumptions or invented details
+- Ensure everything is traceable to a specific conversation or document
+
+### 5. Document in Asana
+
+- Create the Knowledge Hub in the customer's Asana project
+- Add to the Knowledge Tab with links to all source materials
+- Make accessible to the design team
+
+---
+
+## The 10-Section Template
+
+### 1. Company Overview
+
+- **Tier and commitment:** Customer tier level and contract details
+- **Product/service description:** What the company does in 1-2 sentences
+- **Founded date:** When the company was founded
+- **Stage:** Early-stage, bootstrapped, funded, growth-stage, etc.
+- **Funding status:** If applicable - funding rounds, amounts, investors
+- **Team size:** Number of employees
+- **Website/URLs:** Primary website and relevant product URLs
+
+---
+
+### 2. Leadership & Team
+
+- **Key stakeholders with roles:** Names and titles of key people
+- **Primary point of contact:** Who we'll work with day-to-day
+- **Decision-makers:** Who has final approval authority
+- **Technical leads:** If relevant - who leads engineering/technical decisions
+
+---
+
+### 3. Product/Service Description
+
+- **Problem being solved:** What customer pain point does the product address
+- **Solution approach:** How the product solves that problem
+- **Current state:** What exists today - MVP, beta, live product, etc.
+- **Key features/functionality:** Main capabilities of the product
+- **User personas:** Who uses the product - roles, industries, characteristics
+
+---
+
+### 4. Business Model & Market
+
+- **Revenue model:** How they make money (SaaS, marketplace, etc.)
+- **Target market/customers:** Who they sell to (company size, industry, role)
+- **Competitive landscape:** Key competitors and market positioning
+- **Key differentiators:** What makes them unique in the market
+
+---
+
+### 5. Business Objectives
+
+- **Near-term goals:** What they're trying to achieve in 3-6 months
+- **Key metrics being tracked:** Revenue, users, engagement, etc.
+- **Success criteria:** What defines success for this partnership
+- **Critical deadlines/launch dates:** Important dates that impact design work
+
+---
+
+### 6. Design Needs & Expectations
+
+- **What TDP is being asked to do:** Specific design scope and deliverables
+- **Priority order of work:** What needs to happen first, second, third
+- **Specific deliverables needed:** Wireframes, prototypes, UI designs, design system, etc.
+- **Current design state:** What exists today - existing designs, brand assets, etc.
+
+---
+
+### 7. Technology Stack & Tools
+
+- **Development approach:** Framework being used (React, Vue, etc.)
+- **Tools being used:** Figma setup, collaboration tools, project management
+- **AI/automation in workflow:** How they're using AI in their process
+- **Technical constraints or requirements:** Platform limitations, accessibility needs, etc.
+
+---
+
+### 8. Work Process & Communication
+
+- **Team structure (TDP side):** Lead + Associate assigned
+- **Communication channels:** Slack channel name, email, other tools
+- **Meeting cadence:** Weekly sync, office hours, async-first, etc.
+- **Work style preferences:** Async vs sync, feedback style, review process
+- **How feedback/approvals work:** Who reviews, approval process, iteration approach
+
+---
+
+### 9. Critical Success Factors
+
+- **What makes this project successful:** From the customer's perspective
+- **Key challenges to navigate:** Technical, organizational, timeline, etc.
+- **Unique opportunities:** What makes this an exciting project
+- **Design team priorities:** What the design team should focus on
+
+---
+
+### 10. Key Principles
+
+- **Non-negotiables:** Things that absolutely must be done or cannot be compromised
+- **What matters most to this customer:** Values, priorities, sensitivities
+- **Any other notes/sensations from customer meetings:** Tone, concerns, excitement, red flags
+
+---
+
+## Handoff to Design Team
+
+Once the Knowledge Hub is complete:
+
+1. **Share in Asana** — Add to the customer's project Knowledge Tab
+2. **Notify design team** — Alert the assigned Lead that the Knowledge Hub is ready
+3. **Make available before onboarding** — Ensure this is accessible before Step 1 (Onboarding) in the [Process Workflow](/docs/sop/process)
+4. **Reference in kickoff** — Design Lead uses this to prepare for Step 3 (Customer Kickoff)
+
+<Callout type="info">
+The Knowledge Hub becomes the single source of truth for customer context. The design team should reference it throughout the engagement to stay aligned with business objectives and customer needs.
+</Callout>
+
+---
+
+## Best Practices
+
+### Do's ✓
+- Cite specific sources for information
+- Note when information is not available rather than guessing
+- Include direct quotes from customer when particularly insightful
+- Cross-reference between Sales and Expectations meetings for consistency
+- Update the Knowledge Hub as new information becomes available
+
+### Don'ts ✗
+- Invent details to complete sections
+- Make assumptions about business model or metrics
+- Extrapolate beyond what was explicitly stated
+- Skip verification against source materials
+- Leave sections empty without noting "Information not provided"
