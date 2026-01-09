@@ -3,7 +3,8 @@
   "pages": [
     "qa",
     "prompts",
-    "troubleshooting",
-    "llm-council"
+    "claude-daily-workflow",
+    "llm-council",
+    "troubleshooting"
   ]
 }
