@@ -19,6 +19,7 @@ Company-level structure and processes:
 - **Leadership Roles** — Alex (Director), Dianne (Commercial), Mica (Customer Success & Ops)
 - **Design Team Structure** — Team Leads (Luli & Delfi) and Junior Designers
 - **Key Processes** — Escalation flows, design reviews, quality checks, sales handoff
+- **Go-To-Market (GTM) Playbook** — Strategic framework for bringing products and services to market
 
 ### Lead & Associate SOP (`/docs/sop`)
 Standard operating procedures for the Lead/Associate designer model:
@@ -41,7 +42,8 @@ content/docs/
 │   ├── index.mdx
 │   ├── leadership.mdx
 │   ├── design-team.mdx
-│   └── processes.mdx
+│   ├── processes.mdx
+│   └── gtm-playbook.mdx
 └── sop/                         # Lead & Associate SOP
     ├── index.mdx
     ├── tools-templates.mdx
